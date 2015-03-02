@@ -8,9 +8,11 @@
 using namespace std;
 
 class Unary : public Operator {
+protected:
 	Operand* ptOperand;
 public:
-	Unary(const string& name, Operand* _ptOperand);
+	Unary(const string& name, Operand* _ptOperand = nullptr);
+	void SetOperand(Operand* _ptOperand);
 };
 
 #endif
