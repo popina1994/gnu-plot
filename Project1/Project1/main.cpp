@@ -17,9 +17,8 @@
 using namespace std;
 
 int main() {
-	cout << OPERATOR_PRECEDENCE[0] << endl;
-
-
+	
+	InitialsPrecedence();
 	_CrtDumpMemoryLeaks();
 	return 0;
 }

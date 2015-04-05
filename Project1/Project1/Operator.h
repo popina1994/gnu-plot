@@ -2,7 +2,9 @@
 #define _OPERATOR_H_
 
 #include <string>
+#include <map>
 #include "Item.h"
+#include "Priority.h"
 
 using namespace std;
 
@@ -24,5 +26,9 @@ public:
 
 	bool IsOperand() const override;
 };
+
+// name of operator, Input-Stack Priority
+static map <string, Priority> m;
+void InitialsPrecedence();
 
 #endif

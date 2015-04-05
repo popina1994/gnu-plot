@@ -13,7 +13,11 @@ protected:
 public:
 	Unary(const string& name, Operand* _ptOperand = nullptr);
 	void SetOperand(Operand* _ptOperand);
+	virtual double CalculateOperation() const = 0;
 };
+
+
+
 
 #endif
 

@@ -23,6 +23,21 @@ class Plus : public Binary {
 
 };
 
+class Minus : public Binary{
+	using Binary::Binary;
+	double CalculateOperation() const override;
+};
+
+class Multiple : public Binary{
+	using Binary::Binary;
+	double CalculateOperation() const override;
+};
+
+class Devide : public Binary{
+	using Binary::Binary;
+	double CalculateOperation() const override;
+};
+
 #endif
 
 
