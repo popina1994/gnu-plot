@@ -11,6 +11,9 @@ public:
 	Priority() = default;
 	Priority(int _inputP, int _stackP);
 	Priority(const Priority & _other);
+
+	int GetInputPriority() const;
+	int GetStackPriority() const;
 };
 
 

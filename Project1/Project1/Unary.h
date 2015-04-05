@@ -11,7 +11,7 @@ class Unary : public Operator {
 protected:
 	Operand* ptOperand;
 public:
-	Unary(const string& name, Operand* _ptOperand = nullptr);
+	Unary(const string& name, Operand* _ptOperand = nullptr); // name of operator, and operand
 	void SetOperand(Operand* _ptOperand);
 	virtual double CalculateOperation() const = 0;
 };

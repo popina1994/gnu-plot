@@ -12,19 +12,4 @@ void Binary::SetSecondOperand(Operand* ptOperand) {
 	ptOperand2 = ptOperand;
 }
 
-double	 Plus::CalculateOperation() const {
-	return ptOperand1->GetVal() + ptOperand2->GetVal();
-}
 
-double	 Minus::CalculateOperation() const {
-	return ptOperand1->GetVal() - ptOperand2->GetVal();
-}
-
-double	 Multiple::CalculateOperation() const
-{
-	return ptOperand1->GetVal() * ptOperand2->GetVal();
-}
-double	 Devide::CalculateOperation() const
-{
-	return ptOperand1->GetVal() / ptOperand2->GetVal();
-}

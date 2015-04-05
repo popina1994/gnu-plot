@@ -17,27 +17,6 @@ public:
 	void SetSecondOperand(Operand* _ptOperand);
 };
 
-class Plus : public Binary {
-	using Binary::Binary;
-	double CalculateOperation() const override;
-
-};
-
-class Minus : public Binary{
-	using Binary::Binary;
-	double CalculateOperation() const override;
-};
-
-class Multiple : public Binary{
-	using Binary::Binary;
-	double CalculateOperation() const override;
-};
-
-class Devide : public Binary{
-	using Binary::Binary;
-	double CalculateOperation() const override;
-};
-
 #endif
 
 

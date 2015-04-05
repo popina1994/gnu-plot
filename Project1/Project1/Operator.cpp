@@ -13,6 +13,10 @@ int Operator::NumberOfOperands() const {
 	return numOperand;
 }
 
+int Operator::Rank() const {
+	return 1 - NumberOfOperands();
+}
+
 const string& Operator::GetNameOfOperator() const {
 	return nameOfOperator;
 }
@@ -21,12 +25,17 @@ bool Operator::IsOperand() const {
 	return true;
 }
 
+map <string, Priority> m;
+
 void InitialsPrecedence() {
 	m["+"] = Priority(2, 2);
 	m["-"] = Priority(2, 2);
 	m["*"] = Priority(3, 3);
 	m["/"] = Priority(3, 3);
 	m["^"] = Priority(5, 4);
-	m["("] = Priority(6, 0);
+	m["sin"] = Priority(7, 6);
+	m["++"] = Priority(9, 8);
+	m["--"] = Priority(9, 8);
+	m["("] = Priority(10, 0);
 	m[")"] = Priority(1, 0);
 }

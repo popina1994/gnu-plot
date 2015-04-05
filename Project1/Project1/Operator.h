@@ -22,13 +22,14 @@ public:
 	virtual ~Operator() = 0;
 	
 	int NumberOfOperands() const;
+	int Rank() const;
 	const string& GetNameOfOperator() const;	
 
 	bool IsOperand() const override;
 };
 
 // name of operator, Input-Stack Priority
-static map <string, Priority> m;
+extern map <string, Priority> m;
 void InitialsPrecedence();
 
 #endif
