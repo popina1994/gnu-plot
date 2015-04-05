@@ -20,8 +20,9 @@ public:
 	virtual ~Operator() = 0;
 	
 	int NumberOfOperands() const;
-	const string& GetNameOfOperator() const;
+	const string& GetNameOfOperator() const;	
 
+	bool IsOperand() const override;
 };
 
 #endif

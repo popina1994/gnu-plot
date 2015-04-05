@@ -14,3 +14,7 @@ int Operator::NumberOfOperands() const {
 const string& Operator::GetNameOfOperator() const {
 	return nameOfOperator;
 }
+
+bool Operator::IsOperand() const {
+	return true;
+}

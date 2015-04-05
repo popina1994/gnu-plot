@@ -4,6 +4,7 @@
 class Item {
 public:
 	virtual ~Item() = 0;
+	virtual bool IsOperand() const = 0;
 };
 
 #endif

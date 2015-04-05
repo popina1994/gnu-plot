@@ -13,5 +13,7 @@ public:
 	Operand(double _val, const string& _nameOfVariable);
 	const string& GetName() const;
 	const double& GetVal() const;
+
+	bool IsOperand() const override;
 };
 #endif

@@ -15,8 +15,6 @@ public:
 
 	void SetFirstOperand(Operand* _ptOperand);
 	void SetSecondOperand(Operand* _ptOperand);
-
-
 };
 
 class Plus : public Binary {
